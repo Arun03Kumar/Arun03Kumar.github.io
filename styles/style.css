@@ -325,7 +325,7 @@ section {
   line-height: 2rem;
 }
 
-.about-container .right-about {
+.right-about {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (1fr)[2];
@@ -333,7 +333,7 @@ section {
   grid-gap: 2rem;
 }
 
-.about-container .right-about .cards {
+.right-about .cards {
   border: 1px solid var(--color-grey-5);
   border-radius: 5px;
   -webkit-transition: all .4s ease-in-out;
@@ -342,7 +342,7 @@ section {
           box-shadow: 1px 4px 15px rgba(0, 0, 0, 0.1);
 }
 
-.about-container .right-about .cards:hover {
+.right-about .cards:hover {
   cursor: default;
   -webkit-transform: translateY(-5px);
           transform: translateY(-5px);
@@ -351,7 +351,7 @@ section {
           box-shadow: 1px 4px 15px rgba(0, 0, 0, 0.3);
 }
 
-.about-container .right-about .cards .card-text {
+.right-about .cards .card-text {
   padding: 1.5rem;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -365,71 +365,10 @@ section {
           align-items: center;
 }
 
-.about-container .right-about .cards .card-text .large-text {
+.right-about .cards .card-text .large-text {
   font-size: 3rem;
   font-weight: 700;
   color: var(--color-secondary);
-}
-
-.skills {
-  margin: 7rem 13rem;
-}
-
-.skills h2 {
-  text-align: center;
-}
-
-.skills .skills-cols .lang {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 1fr 1fr;
-      grid-template-columns: 1fr 1fr;
-  height: 20rem;
-  margin-top: 3rem;
-}
-
-.skills .skills-cols .lang .left-lang {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 1fr 1fr 1fr;
-      grid-template-columns: 1fr 1fr 1fr;
-  padding-right: 5rem;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.skills .skills-cols .lang .right-lang {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.skills .skills-cols .lang .right-lang h1 {
-  font-size: 2.5rem;
-  color: var(--color-secondary);
-}
-
-.lang-img img {
-  width: 8rem;
-  height: 8rem;
-  -o-object-fit: contain;
-     object-fit: contain;
-  padding: auto;
-}
-
-.oct {
-  padding: 1rem;
-}
-
-.lang-up {
-  margin-bottom: 3rem;
 }
 
 .tit {
@@ -509,5 +448,82 @@ section {
   display: inline-block;
   font-size: .8rem;
   font-weight: 500;
+}
+
+.main-title-2 {
+  text-align: center;
+  margin-top: 3rem;
+}
+
+.main-title-2 h2 {
+  position: relative;
+  text-transform: uppercase;
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+.main-title-2 h2 span {
+  color: var(--color-secondary);
+}
+
+.main-title-2 h2 .bg-txt {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  font-size: 4.5rem;
+  font-weight: 800;
+  color: var(--color-grey-5);
+  z-index: -1;
+}
+
+.right-about-1 {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  grid-gap: 2rem;
+}
+
+.right-about-1 .cards {
+  border: 1px solid var(--color-grey-5);
+  border-radius: 5px;
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
+  -webkit-box-shadow: 1px 4px 15px rgba(0, 0, 0, 0.1);
+          box-shadow: 1px 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.right-about-1 .cards:hover {
+  cursor: default;
+  -webkit-transform: translateY(-5px);
+          transform: translateY(-5px);
+  border: 1px solid var(--color-secondary);
+  -webkit-box-shadow: 1px 4px 15px rgba(0, 0, 0, 0.3);
+          box-shadow: 1px 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+.right-about-1 .cards .card-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.right-about-1 .cards .card-text .large-text {
+  font-size: 3rem;
+  font-weight: 700;
+  color: var(--color-secondary);
+}
+
+.skills1 {
+  margin: 3rem 13rem;
 }
 /*# sourceMappingURL=style.css.map */
