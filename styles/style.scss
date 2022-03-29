@@ -463,3 +463,35 @@ section{
   transform: scale(1);
   opacity: 1;
 }
+.con{
+  margin-top: 4rem;
+}
+.contact-container{
+  display: grid;
+  grid-template-columns: .1fr 4fr;
+  margin: 1rem 15rem;
+  // position: absolute;
+  // left: 50%;
+  // top: 50%;
+  // transform: translate(-50%, -50%);
+  .img-container{
+    width: 70px;
+    height: 70px;
+    background-color: var(--color-secondary);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 12rem;
+    // padding-left: 3rem;
+    i{
+      font-size: 2rem;
+      color: var(--color-black);
+    }
+  }
+  .link-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+  }
+}
