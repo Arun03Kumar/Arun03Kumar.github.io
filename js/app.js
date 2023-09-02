@@ -4,8 +4,10 @@ let dialouge = document.querySelector(".dialouge");
 // console.log(sectbtn)
 // console.log(btns)
 const closeDialouge = () => {
-  dialouge.style.display = "none";
+  dialouge.style.transform = "translateY(-100%)";
+  dialouge.style.zIndex = -1;
 };
+
 function pageChange() {
   for (let i = 0; i < btns.length; i++) {
     // const sid = btns[i].dataset.id
