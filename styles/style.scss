@@ -134,6 +134,27 @@ section {
     top: 50%;
     transform: translate(-50%, -50%);
 
+    @media (max-width: 600px) {
+      font-size: 8px;
+      width: 90%;
+
+      p:nth-child(3) {
+        font-size: 16px;
+      }
+    }
+
+    @media screen and (min-width: 600px) and (max-width: 800px) {
+      width: 70%;
+    }
+
+    @media screen and (min-width: 800px) and (max-width: 1000px) {
+      width: 50%;
+    }
+
+    @media screen and (min-width: 1000px) and (max-width: 1200px) {
+      width: 40%;
+    }
+
     p:nth-child(1) {
       font-size: 30px;
       font-weight: bold;
@@ -609,5 +630,12 @@ section {
     justify-content: center;
     align-items: center;
     font-size: 2rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .box {
+    font-size: 8px;
+    width: 90%;
   }
 }
