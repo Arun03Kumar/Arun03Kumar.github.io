@@ -1,0 +1,178 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@font-face {
+  font-family: "kalam";
+  src: url("../fonts/Kalam-Bold.ttf");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "kalam";
+  src: url("../fonts/Kalam-Light.ttf");
+  font-weight: 200;
+  font-style: normal;
+}
+@font-face {
+  font-family: "kalam";
+  src: url("../fonts/Kalam-Regular.ttf");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Rubber";
+  src: url("../fonts/Rubber.woff");
+  font-style: normal;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  font-family: "Poppins", sans-serif;
+  overflow-x: hidden;
+}
+
+main {
+  width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+main nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 40px 65px;
+}
+main nav .logo {
+  font-family: "Rubber";
+  font-size: 2em;
+}
+main nav .linksAndDarkMode {
+  display: flex;
+}
+main nav .linksAndDarkMode .links {
+  display: flex;
+  gap: 40px;
+}
+main .center-main {
+  display: flex;
+}
+main .center-main .intro {
+  font-family: "kalam";
+  font-weight: 700;
+  margin-left: 135px;
+}
+main .center-main .intro .hello {
+  font-size: 1.7em;
+}
+main .center-main .intro .text {
+  opacity: 0.6;
+  line-height: 1.5em;
+  letter-spacing: 0.1em;
+}
+main .center-main .intro .text:last-child {
+  color: rebeccapurple;
+  margin-top: 20px;
+}
+main .center-main .socials {
+  position: relative;
+}
+main .center-main .socials .socials-icon-container {
+  width: 100px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  position: absolute;
+}
+main .center-main .socials .socials-icon-container .socials-icon {
+  width: 50px;
+  height: 50px;
+}
+main .center-main .socials .socials-icon-container .socials-icon img {
+  height: 100%;
+}
+main .center-main .socials .socials-icon-container:nth-child(1) {
+  left: 20em;
+  bottom: 10em;
+  background-color: rgba(39, 151, 207, 0.5);
+}
+main .center-main .socials .socials-icon-container:nth-child(1)::after {
+  content: "";
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  border-radius: 50%;
+  border: 1px solid rgba(39, 151, 207, 0.3);
+  animation: circleAnim 8s linear alternate infinite;
+}
+main .center-main .socials .socials-icon-container:nth-child(2) {
+  left: 45em;
+  background-color: rgba(234, 68, 53, 0.5);
+}
+main .center-main .socials .socials-icon-container:nth-child(2)::after {
+  content: "";
+  width: 180px;
+  height: 180px;
+  position: absolute;
+  border-radius: 50%;
+  border: 1px solid rgba(234, 68, 53, 0.5);
+  animation: circleAnim 3s linear alternate infinite;
+}
+main .center-main .socials .socials-icon-container:nth-child(3) {
+  left: 30em;
+  top: 10em;
+  background-color: rgba(115, 144, 114, 0.5333333333);
+}
+main .center-main .socials .socials-icon-container:nth-child(3)::after {
+  content: "";
+  width: 190px;
+  height: 190px;
+  position: absolute;
+  border-radius: 50%;
+  border: 1px solid rgba(115, 144, 114, 0.5333333333);
+  animation: circleAnim 6s linear alternate infinite;
+}
+main .center-main .socials .socials-icon-container:nth-child(3) .socials-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #739072;
+}
+@keyframes circleAnim {
+  to {
+    scale: 0.8;
+  }
+}
+main .img-container {
+  width: 200px;
+  height: 500px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  position: absolute;
+  z-index: 10;
+  display: none;
+}
+main .img-container img {
+  max-width: 100%;
+  max-height: 100%;
+  display: none;
+}
+main .slider-container {
+  overflow: hidden;
+}
+main .slider-container .moving-name {
+  display: flex;
+  white-space: nowrap;
+}
+main .slider-container .moving-name p {
+  font-size: 12vw;
+  font-weight: 400;
+}/*# sourceMappingURL=home.css.map */
