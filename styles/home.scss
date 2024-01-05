@@ -106,6 +106,7 @@ main {
                 align-items: center;
                 border-radius: 50%;
                 position: absolute;
+
                 // rgb()
                 .socials-icon {
                     width: 50px;
@@ -121,6 +122,7 @@ main {
                 left: 20em;
                 bottom: 10em;
                 background-color: rgba(39, 151, 207, 0.5);
+                animation: upAndDown 6s linear alternate infinite;
 
                 &::after {
                     content: "";
@@ -136,6 +138,7 @@ main {
             .socials-icon-container:nth-child(2) {
                 left: 45em;
                 background-color: rgba(234, 68, 53, 0.5);
+                animation: upAndDown 2s linear alternate infinite;
 
                 // bottom: 0em;
                 &::after {
@@ -153,6 +156,7 @@ main {
                 left: 30em;
                 top: 10em;
                 background-color: #73907288;
+                animation: upAndDown 4s linear alternate infinite;
 
                 &::after {
                     content: "";
@@ -164,7 +168,7 @@ main {
                     animation: circleAnim 6s linear alternate infinite;
                 }
 
-                .socials-icon{
+                .socials-icon {
                     display: flex;
                     justify-content: center;
                     align-items: center;
@@ -175,6 +179,12 @@ main {
             @keyframes circleAnim {
                 to {
                     scale: 0.8;
+                }
+            }
+
+            @keyframes upAndDown {
+                to {
+                    transform: translateY(20px);
                 }
             }
         }
